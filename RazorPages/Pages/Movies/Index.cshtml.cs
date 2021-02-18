@@ -35,7 +35,7 @@ namespace RazorPages.Pages.Movies
                                             select m.Genre;
 
             var movies = from m in _context.Movie
-                                        select m;
+                select m;
 
             if (!string.IsNullOrEmpty(SearchString))
             {
